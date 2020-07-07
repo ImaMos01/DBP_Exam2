@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Consumiendo ServiceWeb de Spring Boot Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--descarga jquery-->
+  
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>tabla del spring boot</h1>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th> 
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody class = "elementos">
+		
+    </tbody>
+  </table>
+</div>
+<div>
+	<h2>formulario</h2>
+	<section>
+		<form method="GET" id="formulario" name="formulario">
+		
+			<label for="name">Nombre:</label>
+			<input type="text" placeholder= "nombre" maxlength="80" name="nombre" id="nombre"><br>
+			
+			<p><label for="description:">Descripción:</label><br>
+			<textarea name="description" id="description" rows="4" cols="35"></textarea></p>
+			
+			<p><input type="submit" id="boton" name="boton" value="Enviar">
+		</form>
+	</section>
+</div>
+</body>
+</html>
